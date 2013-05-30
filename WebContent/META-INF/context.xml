@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+  <Resource
+    name="library/books"
+    auth="Container"
+    type="javax.sql.DataSource"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://atr.eng.utah.edu/Library"
+    username="library"
+    password="library"
+    maxActive="2"
+    maxIdle="1"
+    maxWait="10000"
+   />
+  <Resource
+    name="library/patrons"
+    auth="Container"
+    type="javax.sql.DataSource"
+    driverClassName="com.mysql.jdbc.Driver"
+    url="jdbc:mysql://atr.eng.utah.edu/ps8_omarshal"
+    username="omarshal_sw"
+    password="00747574"
+    maxActive="8"
+    maxIdle="4"
+    maxWait="10000"
+   />
+</Context>
